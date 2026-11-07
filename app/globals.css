@@ -36,7 +36,7 @@ button:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
 
 .intro-stage, .instructions-stage, .summary-stage, .map-stage { min-height: calc(100svh - 70px); position: relative; display: grid; place-items: center; padding: 28px 18px; }
 .intro-stage { place-items:stretch; align-items:center; isolation:isolate; overflow:hidden; }
-.hero-image { position:absolute; inset:0; z-index:-3; background-image:url("/images/sugar-hero-blue-orange.png"); background-size:cover; background-position:center; filter:saturate(1.05) contrast(1.03); transform:scale(1.015); }
+.hero-image { position:absolute; inset:0; z-index:-3; background-image:url("/images/sugar-hero-blue-orange.jpg"); background-size:cover; background-position:center; filter:saturate(1.05) contrast(1.03); transform:scale(1.015); }
 .hero-shade { position:absolute; inset:0; z-index:-2; background:
   linear-gradient(90deg, rgba(3,13,27,.95) 0%, rgba(4,20,39,.88) 37%, rgba(3,18,36,.35) 67%, rgba(4,16,31,.26) 100%),
   linear-gradient(0deg, rgba(3,13,27,.82), transparent 45%, rgba(3,13,27,.25)); }
@@ -126,15 +126,15 @@ button:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
 .scan-sweep { position:absolute; inset:0; pointer-events:none; background:linear-gradient(100deg, transparent 44%, rgba(91,225,225,.08) 50%, transparent 56%); transform:translateX(-100%); animation:sweep 1.4s ease .2s both; z-index:4; }
 @keyframes sweep { to { transform:translateX(100%); } }
 .patient-photo { position:relative; min-height:310px; background-color:#153d59; background-size:300% 100%; background-repeat:no-repeat; background-position:center; overflow:hidden; }
-.photo-0 { background-image:url("/images/sugar-patients-1.png"); background-position:0% 50%; }
-.photo-1 { background-image:url("/images/sugar-patients-1.png"); background-position:50% 50%; }
-.photo-2 { background-image:url("/images/sugar-patients-1.png"); background-position:100% 50%; }
-.photo-3 { background-image:url("/images/sugar-patients-2.png"); background-position:0% 50%; }
-.photo-4 { background-image:url("/images/sugar-patients-2.png"); background-position:50% 50%; }
-.photo-5 { background-image:url("/images/sugar-patients-2.png"); background-position:100% 50%; }
-.photo-6 { background-image:url("/images/sugar-patients-3.png"); background-position:0% 50%; }
-.photo-7 { background-image:url("/images/sugar-patients-3.png"); background-position:50% 50%; }
-.photo-8 { background-image:url("/images/sugar-patients-3.png"); background-position:100% 50%; }
+.photo-0 { background-image:url("/images/sugar-patients-1.jpg"); background-position:0% 50%; }
+.photo-1 { background-image:url("/images/sugar-patients-1.jpg"); background-position:50% 50%; }
+.photo-2 { background-image:url("/images/sugar-patients-1.jpg"); background-position:100% 50%; }
+.photo-3 { background-image:url("/images/sugar-patients-2.jpg"); background-position:0% 50%; }
+.photo-4 { background-image:url("/images/sugar-patients-2.jpg"); background-position:50% 50%; }
+.photo-5 { background-image:url("/images/sugar-patients-2.jpg"); background-position:100% 50%; }
+.photo-6 { background-image:url("/images/sugar-patients-3.jpg"); background-position:0% 50%; }
+.photo-7 { background-image:url("/images/sugar-patients-3.jpg"); background-position:50% 50%; }
+.photo-8 { background-image:url("/images/sugar-patients-3.jpg"); background-position:100% 50%; }
 .patient-photo[class*="photo-"] .image-placeholder { display:none; }
 .image-placeholder { position:absolute; inset:0; display:grid; place-items:center; background:radial-gradient(circle at 45% 30%, rgba(128,196,214,.45), transparent 30%), linear-gradient(155deg, #285976, #102c46); }
 .image-placeholder span { width:94px; height:94px; display:grid; place-items:center; border-radius:50%; background:rgba(208,243,248,.1); border:1px solid rgba(200,246,250,.23); color:#b5dce8; font-size:44px; }
