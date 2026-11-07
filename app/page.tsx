@@ -292,6 +292,7 @@ export default function Home() {
             <div className="scan-sweep" />
             <div className={`patient-photo photo-${active.image}`} role="img" aria-label={`דמות מטופל/ת בדויה: ${active.name}`}>
               <div className="image-placeholder"><span>{active.name.slice(0, 1)}</span></div>
+              {(active.image === 5 || active.image === 8) && <div className="ziv-gown-mark">זיו</div>}
               <div className="photo-badge">תיק בדוי</div>
             </div>
             <div className="patient-data">
@@ -367,7 +368,6 @@ export default function Home() {
             <div className="summary-actions">
               <button className="primary-button" onClick={reset}>משחק חוזר ↻</button>
               <button className="secondary-button" onClick={() => setScreen("map")}>צפייה במפת האבחון</button>
-              <button className="ghost-button" onClick={() => alert("המשחק הבא בסדרה: איזו בדיקה קובעת?")}>מעבר למשחק הבא ←</button>
             </div>
             <p className="disclaimer">המשחק הוא כלי לימודי ואינו מחליף שיקול דעת קליני, נהלים מקומיים או הערכה רפואית מלאה.</p>
             <p className="source">מקור: ADA Standards of Care in Diabetes—2026 · Diagnosis and Classification of Diabetes</p>
