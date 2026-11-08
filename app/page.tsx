@@ -237,6 +237,7 @@ export default function Home() {
             <b>מערכת פענוח פעילה</b><small>CLINICAL DATA READY</small>
           </div>
         </section>
+        <p className="copyright-note">כל הזכויות שמורות לשטיבלמן נטלה - אחות מומחית קלינית בסוכרת</p>
         <div className="status-chip">חיבור מאובטח <i /></div>
       </main>
     </Shell>
@@ -402,6 +403,7 @@ function Shell({ children, sound, setSound }: { children: React.ReactNode; sound
         <div className="brand-mark"><span>+</span></div>
         <div><small>בלשי הסוכר</small><b>סדרת המשחקים הקליניים</b></div>
         <button className="sound-button" onClick={() => setSound(!sound)} aria-label={sound ? "השתקת צלילים" : "הפעלת צלילים"}>{sound ? "◕" : "○"} <span>{sound ? "צליל פעיל" : "מושתק"}</span></button>
+        <img className="creator-logo" src="/images/natella-shtivelman-logo.png" alt="Natella Shtivelman, Diabetes Nurse Practitioner" />
       </header>
       {children}
     </div>

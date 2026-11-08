@@ -33,6 +33,7 @@ button:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
 .brand-mark { width: 38px; height: 38px; border: 1px solid rgba(255, 159, 47, .5); background: linear-gradient(145deg, rgba(255,159,47,.18), rgba(21,119,202,.12)); display: grid; place-items: center; border-radius: 12px; color: var(--amber); font-size: 23px; box-shadow: inset 0 0 20px rgba(255,159,47,.06), 0 0 24px rgba(255,126,26,.08); }
 .sound-button { margin-inline-start: auto; border: 1px solid var(--line); background: rgba(255,255,255,.04); color: #cce1ee; border-radius: 999px; padding: 8px 13px; cursor: pointer; display: flex; gap: 7px; }
 .sound-button span { font-size: 12px; }
+.creator-logo { width:54px; height:54px; object-fit:contain; flex:0 0 auto; filter:drop-shadow(0 3px 10px rgba(0,0,0,.32)); }
 
 .intro-stage, .instructions-stage, .summary-stage, .map-stage { min-height: calc(100svh - 70px); position: relative; display: grid; place-items: center; padding: 28px 18px; }
 .intro-stage { place-items:stretch; align-items:center; isolation:isolate; overflow:hidden; }
@@ -73,6 +74,7 @@ button:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
 .duration { color: #7895aa; font-size: 12px; margin-top: 17px; }
 .status-chip { position: absolute; bottom: 22px; left: 30px; color: #7797aa; font-size: 11px; z-index: 3; }
 .status-chip i { display:inline-block; width:7px; height:7px; background:var(--amber); border-radius:50%; margin-right:7px; box-shadow:0 0 10px var(--orange); }
+.copyright-note { position:absolute; bottom:22px; right:30px; z-index:3; margin:0; color:#8ca8ba; font-size:10px; line-height:1.4; text-align:right; }
 
 .case-animation { width: 150px; height: 118px; position: relative; margin-bottom: 24px; perspective: 400px; }
 .folder-back, .folder-front { position: absolute; inset-inline: 6px; height: 86px; bottom: 4px; border-radius: 11px; }
@@ -296,4 +298,13 @@ button:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; scroll-behavior:auto !important; }
+}
+
+@media (max-width: 700px) {
+  .creator-logo { width:42px; height:42px; }
+  .global-header { gap:8px; padding-inline:12px; }
+  .sound-button { padding:7px 9px; }
+  .sound-button span { display:none; }
+  .copyright-note { right:14px; bottom:12px; max-width:72vw; font-size:8px; }
+  .status-chip { display:none; }
 }
